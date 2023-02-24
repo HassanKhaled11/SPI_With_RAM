@@ -1,0 +1,11 @@
+vlib work
+
+vlog ram.v   ram_tb.v
+
+vsim -voptargs=+acc  work.Ram_tb
+
+add wave *
+
+run -all
+
+# quit -sim
